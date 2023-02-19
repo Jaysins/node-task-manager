@@ -7,7 +7,7 @@ const notFound = require("./middleware/not_found")
 const errorHandlerMiddleware = require("./middleware/error_handler")
 
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.use(express.static("./public"))
 app.use(express.json())
